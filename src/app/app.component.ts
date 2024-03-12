@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { WeatherService } from './services/weather.service';
+import { WeatherData } from './models/weather.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'weather';
+  constructor (private weatherService: WeatherService){
+
+  }
+
+  weatherData?: WeatherData;
+
+  ngOnInit(): void {
+    this.weatherService.getWeatherData('London')
+    .subscribe({
+      next: (response) => {
+        this.weatherData = response;
+        console.log(response);
+      }
+    });
+  }
+
 }
