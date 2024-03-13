@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="153.76253mm"
+   height="118.54172mm"
+   viewBox="0 0 153.76253 118.54172"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient3">
+      <stop
+         style="stop-color:#600040;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+      <stop
+         style="stop-color:#9e171a;stop-opacity:1;"
+         offset="0.27101851"
+         id="stop6" />
+      <stop
+         style="stop-color:#d3a826;stop-opacity:1;"
+         offset="1"
+         id="stop5" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1">
+      <stop
+         style="stop-color:#310024;stop-opacity:1;"
+         offset="0.14814815"
+         id="stop1" />
+      <stop
+         style="stop-color:#31008a;stop-opacity:1;"
+         offset="0.40046296"
+         id="stop3" />
+      <stop
+         style="stop-color:#317fc2;stop-opacity:1;"
+         offset="0.7800926"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="39.773468"
+       y1="125.63955"
+       x2="174.70589"
+       y2="125.63955"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.87327819,0,0,1.4820142,15.262306,-288.607)" />
+    <linearGradient
+       xlink:href="#linearGradient3"
+       id="linearGradient5"
+       x1="26.021353"
+       y1="108.81656"
+       x2="179.25819"
+       y2="108.81656"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.77358491,0,0,1.3058036,29.941667,-244.60142)" />
+  </defs>
+  <g
+     id="layer1"
+     style="display:none"
+     transform="translate(-25.627089,-50.071391)">
+    <rect
+       style="fill:url(#linearGradient2);stroke-width:0.279857"
+       id="rect1"
+       width="117.83355"
+       height="153.14642"
+       x="49.995609"
+       y="-178.98059"
+       ry="0"
+       transform="rotate(90)" />
+  </g>
+  <g
+     id="layer2"
+     transform="translate(-25.627089,-50.071391)">
+    <rect
+       style="fill:url(#linearGradient5);stroke-width:0.239675"
+       id="rect3"
+       width="118.54172"
+       height="153.76253"
+       x="50.071392"
+       y="-179.38962"
+       transform="rotate(90)" />
+  </g>
+</svg>

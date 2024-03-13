@@ -2,12 +2,12 @@
 
 <div class="container" *ngIf="weatherData">
   <div class="upper-data">
-    <img src="" *ngIf="weatherData.main.temp > 15">
-    <img src="" *ngIf="weatherData.main.temp <=15">
+    <img src="../assets/testwarm.svg" *ngIf="weatherData.main.temp > 15">
+    <img src="../assets/testcold.svg" *ngIf="weatherData.main.temp <=15">
 
     <div class="weather-data">
       <div class="location">{{weatherData.name}}</div>
-      <div class="temperature">{{ weatherData.main.temp | number: '1.0-0' }}°C</div>
+      <div class="temperature">{{ weatherData.main.temp | number: '1.0-0' }}°F</div>
     </div>
   </div>
   <div class="lower-data">
@@ -17,21 +17,21 @@
     <div class="more-info-container">
       <div class="info-block">
         <div class="info-block-label">
-          <img src="">
+          <img src="../assets/min.svg">
           <span>min</span>
         </div>
         <div class="info-block-value">
-          {{weatherData.main.temp_min | number: '1.0-0'}}°C
+          {{weatherData.main.temp_min | number: '1.0-0'}}°F
         </div>
       </div>
 
       <div class="info-block">
         <div class="info-block-label">
-          <img src="">
+          <img src="../assets/max.svg">
           <span>max</span>
         </div>
         <div class="info-block-value">
-          {{weatherData.main.temp_max | number: '1.0-0'}}°C
+          {{weatherData.main.temp_max | number: '1.0-0'}}°F
         </div>
       </div>
 

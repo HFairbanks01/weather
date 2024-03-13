@@ -53,4 +53,10 @@ body {
 
 * {
   box-sizing: border-box;
+  color: white;
 }
+
+  .container {
+      background-color: mat.get-theme-color($weather-theme, primary, 500);
+  }
+

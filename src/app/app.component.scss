@@ -1,18 +1,8 @@
-@use 'sass:map';
-@use '@angular/material' as mat;
-
-@mixin color ($theme){
-    .container {
-        background-color: mat.get-theme-color($weather-app-primary, primary, 500);
-    }
-}
-
 .container {
     width: 400px;
     height: 80vh;
-    background-color: blueviolet;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(255,255,255,0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.286);
 }
 
 .upper-data {
@@ -30,6 +20,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .weather-data {
@@ -45,26 +36,22 @@
 }
 
 .location {
-    color: white;
     text-align: center;
     font-size: 1.2em;
-
 }
 
 .temperature {
-    color: white;
+    
     font-size: 4em;
     text-align: center;
     font-weight: 900;
 }
 
-.more-info-label {
-    color: white;
-}
+
 
 .more-info-container {
     flex: 1;
-    background-color: rgba(211, 211, 211, 0.465);
+    background-color: rgba(211, 211, 211, 0.173);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-top: 1em;
@@ -89,11 +76,10 @@
 }
 
 .info-block-label img {
-    width: 1.5em;
+    max-width: 0.5em;
 }
 
 .info-block-label span {
-    color: white;
     font-size: 0.8em;
 }
 
@@ -102,7 +88,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: white;
 }
 
 .lower-data {
