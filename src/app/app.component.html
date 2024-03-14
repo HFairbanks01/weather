@@ -1,18 +1,30 @@
-<button mat-raised-button color="primary">Home</button>
+<div class="search">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input type="text" placeholder="Search city" name="city" [(ngModel)]="cityName">
+  </form>
+</div>
 
 <div class="container" *ngIf="weatherData">
   <div class="upper-data">
-    <img src="../assets/testwarm.svg" *ngIf="weatherData.main.temp > 15">
-    <img src="../assets/testcold.svg" *ngIf="weatherData.main.temp <=15">
+    <img src="../assets/testwarm.svg" *ngIf="weatherData.main.temp > 65">
+    <img src="../assets/testcold.svg" *ngIf="weatherData.main.temp <=65">
 
     <div class="weather-data">
+      <div class="weather-type">
+        <img src="../assets/clear.svg" *ngIf="weatherData.weather[0].main == 'Clear'">
+        <img src="../assets/rain.svg" *ngIf="weatherData.weather[0].main == 'Rain'">
+        <img src="../assets/cloudy.svg" *ngIf="weatherData.weather[0].main == 'Clouds'">
+        <img src="../assets/snow.svg" *ngIf="weatherData.weather[0].main == 'Snow'">
+      </div>
+      
       <div class="location">{{weatherData.name}}</div>
       <div class="temperature">{{ weatherData.main.temp | number: '1.0-0' }}°F</div>
+      <div class="desc">{{weatherData.weather[0].description}}</div>
     </div>
   </div>
   <div class="lower-data">
     <div class="more-info-label">
-      Info
+      Details
     </div>
     <div class="more-info-container">
       <div class="info-block">
@@ -37,7 +49,7 @@
 
       <div class="info-block">
         <div class="info-block-label">
-          <img src="">
+          <img src="../assets/humidity.svg">
           <span>humidity</span>
         </div>
         <div class="info-block-value">
@@ -47,7 +59,7 @@
 
       <div class="info-block">
         <div class="info-block-label">
-          <img src="">
+          <img src="../assets/wind.svg">
           <span>wind</span>
         </div>
         <div class="info-block-value">

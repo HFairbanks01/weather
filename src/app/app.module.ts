@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HttpClientModule } from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button'; 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()
